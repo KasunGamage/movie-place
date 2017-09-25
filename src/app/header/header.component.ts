@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   appName = "Tv Search";
-  isVisible: false;
+  isVisible:boolean = false;
 
   constructor() { }
 

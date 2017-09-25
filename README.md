@@ -3,6 +3,8 @@
 ![Project Dashboard](1.png)
 ![Adding new Client](2.png)
 
+[Visit App] (https://drejcreative.github.io/movie-place/)
+
 This is Angular one page app for searching movies, watching trailers, and getting all related informations about movies. Frontend is build by Angular 4 and backend informations come from `themoviedb.org` free API.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
