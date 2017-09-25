@@ -1,0 +1,10 @@
+.wrap {
+  height: calc(100vh - 56px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.carousel__header {
+  font-size: 80px;
+  cursor: pointer;
+}
