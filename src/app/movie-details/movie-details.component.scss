@@ -1,3 +1,5 @@
+@import '../../styles/mixin';
+
 .txt-color {
   color: white;
 }
@@ -5,10 +7,14 @@
 .poster {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  min-height: 600px;
   position: relative;
   display: flex;
   align-items: center;
+  @include break-point($max-width: 768px) {
+    padding: 10px 0;
+    text-align: center;
+  }
 
   &:before {
     content: '';
@@ -23,6 +29,9 @@
 
   &__image-wrap {
     text-align: center;
+    @include break-point($max-width: 768px) {
+      margin-top: 10px;
+    }
   }
 
   &__image {
@@ -35,6 +44,9 @@
   &__header {
     color: white;
     font-size: 60px;
+    @include break-point($max-width: $md-min) {
+      font-size: 40px;
+    }
   }
 
   &__overview {
@@ -97,11 +109,27 @@ iframe {
   background-color: rgba(220, 66, 37, .5);
   margin-right: 0px;
   margin-left: 0px;
+  @include break-point($max-width: $sm-min) {
+    margin: 0 auto;
+    padding: 10px;
+  }
 }
 
 .revenue {
   text-align: left;
   font-size: 20px;
+  @include break-point($max-width: $sm-min) {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &__wrap {
+    @include break-point($max-width: $sm-min) {
+      round-progress {
+        margin: 0 auto;
+      }
+    }
+  }
 
   &__budget {
     font-weight: bold;
@@ -117,9 +145,23 @@ iframe {
   }
 }
 
+.card {
+  width: 50%;
+  @include break-point($max-width: $sm-min) {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
 .review__wrap {
   background: #ffffff;
   padding: 20px;
   height: 400px;
   overflow-y: auto;
+}
+
+.display-3 {
+  @include break-point($max-width: $sm-min) {
+    font-size: 16px;
+  }
 }
